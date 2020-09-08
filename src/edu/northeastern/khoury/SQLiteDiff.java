@@ -1,4 +1,4 @@
-package edu.northeastern.ccis;
+package edu.northeastern.khoury;
 
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
