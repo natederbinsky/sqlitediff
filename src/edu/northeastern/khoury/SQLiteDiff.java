@@ -199,6 +199,11 @@ public class SQLiteDiff {
 				}
 			}
 			
+			if (res.next()) {
+				System.out.println("Too many rows in the result set.");
+				return;
+			}
+			
 			System.out.printf("%nQuery correctly reproduces answer file.%n");
 			
 		} catch (SQLException e) {
