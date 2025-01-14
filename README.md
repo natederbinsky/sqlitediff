@@ -10,4 +10,4 @@ The utility reads the query file, executes it on a bundled SQLite database, and 
 
 Note: the included database is currently Chinook [https://github.com/lerocha/chinook-database] but could theoretically be any SQLite database.
 
-Tested on latest versions of macOS, Ubuntu, and Windows using Oracle/Open JDK 8 - 14.
+Tested on latest versions of macOS, Linux, and Windows using Oracle/Open JDK 8 - 22.
