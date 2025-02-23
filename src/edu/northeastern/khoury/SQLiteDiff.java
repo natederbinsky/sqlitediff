@@ -73,7 +73,7 @@ public class SQLiteDiff {
 			}
 			
 			for (int i=1; i<=expected.length; i++) {
-				final String val = rs.getObject(i).toString();
+				final String val = rs.getObject(i) != null ? rs.getObject(i).toString() : "";
 				if (!val.equals(expected[i-1])) {
 					return String.format("Value for <%s> incorrect: expected=\"%s\", actual=\"%s\"%n", rs.getMetaData().getColumnLabel(i), expected[i-1], val);
 				}
