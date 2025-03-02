@@ -69,7 +69,7 @@ public class SQLiteDiff {
 	private static String checkRow(ResultSet rs, String[] expected) {
 		try {
 			if (!rs.next()) {
-				return "No row available";
+				return String.format("No row available%n");
 			}
 			
 			for (int i=1; i<=expected.length; i++) {
